@@ -1,0 +1,137 @@
+header {
+
+    text-align: right;
+}
+
+h2 {
+
+    font-family: Sans-serif;
+    font-size: 20px;
+    font-display: normal;
+
+}
+
+.pages {}
+
+.nav-list {
+
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-family: Sans-serif;
+    font-style: normal;
+    font-size: small;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* padding-right: 20px; */
+}
+
+.left-items {
+    display: flex;
+    font: bold;
+    font-size: 20px;
+    font-family: Sans-serif;
+
+}
+
+.right-items {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+
+    /* Pushes this group to the right */
+}
+
+
+.item {
+    margin: 0 10px;
+    /* Optional spacing between items */
+}
+
+.small-box {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-left: 10px;
+}
+
+.bg-box {
+    position: absolute;
+    width: 40vw;
+    height: 90vh;
+    background-color: rgb(230 218 207);
+    padding-top: 100px;
+    /* align: left; */
+    z-index: -1;
+}
+
+.main-box {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(244 236 230);
+    top: 30%;
+    left: 25%;
+    box-shadow: -10px 10px 10px rgba(47, 47, 47, 0.2);
+    /* align-items: center; */
+    text-align: center;
+
+}
+
+
+/* Style for the image */
+.box-image {
+    display: block;
+    margin: 0 auto;
+    /* Centers image horizontally */
+    max-width: 50%;
+    /* Keeps image responsive within box */
+    /* padding-top: 8%; */
+    align-items: center;
+    border-radius: 100%;
+    margin-top: 10%;
+
+}
+
+hr {
+    width: 20%;
+    /* Line width */
+    height: 2px;
+    /* Line thickness */
+    background-color: blue;
+    /* Line color */
+    border: none;
+    /* Remove default border */
+    margin: 20px auto;
+    /* Centered with margin */
+}
+
+.social-box {
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    /* Align items in a row */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 60px;
+}
+
+.social-box img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+    margin-top: 3px;
+}
+
+/* Hover effect for icons */
+.social-box a:hover img {
+    transform: scale(1.1);
+    /* Slightly enlarge icon on hover */
+}
