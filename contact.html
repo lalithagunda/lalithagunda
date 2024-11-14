@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="container">
+                <div class="small-box"></div>
+
+                <div class="left-items">
+                    <ul> <a href="index.html">LALITHA GUNDA / Designer</a></ul>
+                </div>
+
+                <div class="right-items">
+                    <ul class="nav-list">
+                        <li><a href="index.html">ABOUT ME</a></li>
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page-bg">
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form action="submit_form.php" method="post" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <!-- <p class="error-message">Enter a first name.</p> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <!-- <p class="error-message">Enter a last name.</p> -->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <!-- <p class="error-message">Enter an email address like example@mysite.com.</p> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Phone: (385) 222-4708</p>
+            </div>
+            <div class="footer-section">
+                <h4>Email</h4>
+                <p>lalithapriyanka14@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
