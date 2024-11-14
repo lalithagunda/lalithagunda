@@ -17,6 +17,7 @@ body {
     /* Full height of the page */
     margin: 0;
 
+
 }
 
 .nav-list {
@@ -76,8 +77,9 @@ a:hover {
 .small-box {
     width: 20px;
     height: 20px;
-    background-color: blue;
+    background-color: rgb(205, 169, 6);
     margin-left: 10px;
+    margin-right: 5px;
 }
 
 .bg-box {
@@ -615,11 +617,16 @@ textarea {
 .picture-grid {
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    /* Switch to auto-fit */
     gap: 16px;
     width: 50%;
-    /* max-width: 1000px; */
+    max-width: 1000px;
+    /* Keep the width within a max limit */
     margin: 20px auto;
+    padding: 0 16px;
+    /* Add padding to avoid edge issues */
+    box-sizing: border-box;
 }
 
 .picture-grid img {
@@ -629,4 +636,5 @@ textarea {
     display: block;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 }
