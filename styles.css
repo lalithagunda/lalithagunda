@@ -38,9 +38,6 @@ a {
 
 }
 
-li {
-    list-style-type: none;
-}
 
 a:hover {
     color: blue;
@@ -364,42 +361,42 @@ body {
 }
 
 .white-box {
-
-    height: 300px;
+    height: auto;
     width: 800px;
     background-color: white;
-    margin-left: 450px;
+    margin: 20px auto;
+    /* Center horizontally */
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+    align-items: flex-start;
+    /* Align items to the top */
+    padding: 20px;
+    /* Add padding for spacing */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: add a shadow */
 }
 
 .job-position {
-
     text-align: left;
-    margin-left: 10px;
+    margin-right: 50px;
+    /* Space between .job-position and .job-experience */
     font-family: sans-serif;
     line-height: 1.5;
-
-
+    width: 300px;
 }
 
 .job-experience {
     text-align: left;
-    margin-left: 150px;
-    margin-right: 20px;
     font-family: sans-serif;
     line-height: 1.5;
-
+    width: calc(100% - 300px - 50px);
+    /* Width minus padding/margin */
 }
 
 .no-bullets {
     list-style-type: none;
-
-
+    padding-left: 0;
 }
+
 
 .form-container {
     background-color: #ffffff;
@@ -618,16 +615,18 @@ textarea {
 .picture-grid {
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 16px;
+    width: 50%;
+    /* max-width: 1000px; */
     margin: 20px auto;
 }
 
 .picture-grid img {
     width: 100%;
-    height: 100%;
+    height: 120px;
+    height: auto;
     display: block;
-    transition: transform 0.3s ease;
-    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
